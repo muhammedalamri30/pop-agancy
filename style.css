@@ -127,7 +127,7 @@ header {
 }
 @media (max-width: 767px) {
   .nav-list a {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
   }
 }
 .nav-list a span {
