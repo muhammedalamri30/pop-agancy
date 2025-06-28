@@ -127,7 +127,11 @@ header {
 }
 @media (max-width: 767px) {
   .nav-list a {
-    font-size: 1.7rem !important;
+    font-size: 1.6rem !important;
+  }
+  .nav-list li {
+    padding: 1rem;
+    margin: 0;
   }
 }
 .nav-list a span {
@@ -233,17 +237,30 @@ header {
     background: #fff;
     border-radius: 10px;
     padding-top: 1rem;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2); /* أبيض شفاف */
+    backdrop-filter: blur(10px); /* يعطي التأثير الثلجي */
   }
+
   .about-text p {
-    max-width: 95%;
+    max-width: 100%;
     top: -10px;
     left: 50%;
-    background: #fff;
     transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* أبيض شفاف */
+    backdrop-filter: blur(10px);
   }
   .about-container {
-    padding: 0;
   }
+  .about-image {
+    position: relative;
+    min-height: 100vh;
+  }
+
   .overlay {
     display: none;
   }
